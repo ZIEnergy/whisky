@@ -1,3 +1,21 @@
 .menu {
+  display: flex;
   
+  &__item {
+    
+    &:nth-child(n+2) {
+      margin-left: 30px;
+    }
+    
+  }
+  
+  &__item-link {
+    font-family: @font-main;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
 }

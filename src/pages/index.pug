@@ -6,4 +6,18 @@ html(lang='en')
   body
     +header
     +front
+    .festival
+      .city
+        a.city__item.city__item--active(href="#") Минск
+        a.city__item(href="#") другие города
+      .festival__info
+        .festival__info-item
+          .festival__info-header Дата
+          .festival__info-content 28.10.2010
+        .festival__info-item
+          .festival__info-header ВРЕМЯ
+          .festival__info-content 20:00
+        .festival__info-item
+          .festival__info-header МЕСТО
+          .festival__info-content клуб republic ул. кальварийская 10
     include ../templates/scripts.pug
