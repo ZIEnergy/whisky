@@ -1,3 +1,44 @@
 .city {
+  display: flex;
   
+  &--light {
+    
+    .city__item {
+      
+      &:nth-child(n+2) {
+        margin-left: 40px;
+      }
+    }
+  }
+  
+  &--blue {
+    justify-content: center;
+    margin: 40px 0;
+    
+    .city__item {
+      color: @color-secondary;
+      
+      &:nth-child(n+2) {
+        margin-left: 30px;
+      }
+    }
+    
+    .city__button {
+      color: @color-primary;
+    }
+  }
+  
+  &__item {
+    font-family: @font-main;
+    color: @color-primary;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 50px;
+  }
+  
+  &__button {
+    padding: 0 30px;
+  }
 }

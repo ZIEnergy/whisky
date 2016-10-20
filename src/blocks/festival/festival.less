@@ -1,3 +1,22 @@
 .festival {
+  background: url(../img/festival-bg.jpg) no-repeat;
+  background-size: cover;
+  padding: 60px 0 100px;
   
+  &__event {
+    margin-top: 100px;
+  }
+  
+  &__section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__section-column {
+  
+    &:nth-child(n+2) {
+      margin-top: 60px;
+    }
+  }
 }
