@@ -1,3 +1,37 @@
 .footer {
+  width: 100%;
+  align-items: center;
+  padding: 42px 0;
+  background-color: #cdbca9;
   
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__copyright {
+    color: @color-secondary;
+    font-family: @font-main;
+    font-size: 16px;
+  }
+  
+  &__up {
+    color: @color-secondary;
+    font-family: @font-main;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+    &:after {
+      content: '';
+      display: block;
+      background: url(../img/arrow-blue.svg) no-repeat;
+      background-size: cover;
+      width: 14px;
+      height: 7px;
+      margin-left: 8px;
+    }
+  }
 }
