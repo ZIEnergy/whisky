@@ -11,6 +11,10 @@
     line-height: 50px;
     transition: @transition;
     
+    &:nth-child(n+2) {
+      margin-left: 8px;
+    }
+    
     @media screen and (max-width: @screen-sm) {
       font-size: 14px;
       line-height: 40px;
@@ -20,8 +24,13 @@
   &--light {
     
     .city__item {
-      padding: 0 30px;
+      padding: 0 31px;
       line-height: 50px;
+    
+      @media screen and (max-width: @screen-sm) {
+        padding: 0 26px;
+        line-height: 40px;
+      }
     
       &:hover {
         color: #fff;
@@ -31,6 +40,7 @@
         background: @color-primary;
         color: @color-secondary;
         text-decoration: none;
+        font-weight: 400;
 
         &:hover {
           color: @color-secondary;
@@ -41,16 +51,23 @@
   
   &--blue {
     justify-content: center;
-    margin: 40px 0;
+    margin: 41px 0;
     
     .city__item {
       color: @color-secondary;
-      padding: 0 30px;
+      padding: 0 31px;
       font-family: @font-main;
-      font-size: 14px;
+      font-size: 18px;
+      
+      &:nth-child(n+2) {
+        margin-left: 0;
+        padding: 0 15px;
+        margin-left: 20px;
+      }
   
       @media screen and (max-width: @screen-md) {
         padding: 0 25px;
+        font-size: 14px;
       }
   
       @media screen and (max-width: @screen-sm) {
@@ -62,6 +79,7 @@
         color: @color-primary;
         text-decoration: none;
         display: block;
+        font-weight: 400;
       }
     
       &--others {

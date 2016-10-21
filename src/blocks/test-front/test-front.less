@@ -3,9 +3,32 @@
   background: @color-primary;
   position: relative;
   
+  @media screen and (max-width: @screen-md) {
+    padding-top: 83px;
+  }
+  
+  @media screen and (max-width: @screen-sm) {
+    padding-top: 31px;
+  }
+  
   &__button {
     width: 170px;
-    margin: 60px auto 0;
+    margin: 62px auto 0;
+    position: relative;
+    z-index: 5;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-top: 30px;
+      width: 150px;
+    }
+  }
+  
+  &__comment {
+    margin-top: 55px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-top: 30px;
+    }
   }
   
   &__arrow {
@@ -13,11 +36,11 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 2;
-    bottom: -140px;
+    z-index: 1;
+    bottom: -130px;
   
     @media screen and (max-width: @screen-md) {
-      bottom: -12%;
+      bottom: -80px;
     }
   
     @media screen and (max-width: @screen-sm) {

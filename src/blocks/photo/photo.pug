@@ -1,7 +1,7 @@
 mixin photo(additionalClass)
   .photo#photo(class=additionalClass)
     h2.content-header Фотоотчеты
-    +light-comment
+    +light-comment('photo__comment')
     .city.city--blue.photo__city
       a.city__item.city__item--active(href="#") Минск
       a.city__item(href="#") Брест

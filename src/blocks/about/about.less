@@ -11,7 +11,7 @@
     position: relative;
   
     @media screen and (max-width: @screen-md) {
-      padding-left: 64px;
+      padding-left: 59px;
     }
   
     @media screen and (max-width: @screen-sm) {
@@ -21,30 +21,36 @@
   
   &__item-content {
     display: flex;
-    padding-top: 233px;
-    padding-bottom: 96px;
+    padding-top: 240px;
+    padding-bottom: 90px;
   
     @media screen and (max-width: @screen-md) {
       padding-left: 64px;
+      padding-top: 206px;
+      padding-bottom: 60px;
     }
   
     @media screen and (max-width: @screen-sm) {
       display: block;
-      padding-left: 0;
       padding-top: 0;
       padding-left: 20px;
       padding-right: 20px;
+      padding-bottom: 30px;
     }
   }
   
   &__item-column {
     
     &:first-child {
-      margin-top: 139px;
+      margin-top: 149px;
+  
+      @media screen and (max-width: @screen-md) {
+        margin-top: 133px;
+      }
     }
     
     &:last-child {
-      margin-left: 105px;
+      margin-left: 110px;
   
       @media screen and (max-width: @screen-md) {
         margin-left: 38px;

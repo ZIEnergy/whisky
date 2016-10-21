@@ -2,9 +2,14 @@
   background: url(../img/festival-bg.jpg) no-repeat;
   background-size: cover;
   padding: 60px 0 100px;
-    
+  
   @media screen and (max-width: @screen-md) {
-    
+    padding-bottom: 88px;
+  }
+  
+  @media screen and (max-width: @screen-sm) {
+    padding-top: 30px;
+    padding-bottom: 5px;
   }
   
   &__wrapper {
@@ -14,8 +19,13 @@
     }
   }
   
+  &__city {
+    padding-left: 4px;
+  }
+  
   &__event {
-    margin-top: 100px;
+    margin-top: 96px;
+    padding-left: 2px;
   
     @media screen and (max-width: @screen-sm) {
       margin-top: 40px;
@@ -23,12 +33,17 @@
   }
   
   &__section {
-    margin-top: 100px;
+    margin-top: 91px;
     display: flex;
     justify-content: space-between;
   
+    @media screen and (max-width: @screen-md) {
+      margin-top: 52px;
+    }
+  
     @media screen and (max-width: @screen-sm) {
       display: block;
+      margin-top: 34px;
     }
   }
   
@@ -38,7 +53,7 @@
       margin-top: 60px;
   
       @media screen and (max-width: @screen-sm) {
-        margin-top: 20px;
+        margin-top: 15px;
       }
     }
   }

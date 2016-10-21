@@ -1,7 +1,7 @@
 mixin festival(additionalClass)
   .festival#events(class=additionalClass)
     .wrapper.festival__wrapper
-      .city.city--light
+      .city.city--light.festival__city
         a.city__item.city__item--active(href="#") Минск
         a.city__item(href="#") другие города
       +event('festival__event')

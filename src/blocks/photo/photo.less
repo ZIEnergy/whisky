@@ -1,9 +1,23 @@
 .photo {
-  padding: 60px 0 50px;
+  padding: 50px 0;
   background: @color-primary;
   
+  @media screen and (max-width: @screen-md) {
+    padding-top: 55px;
+    padding-bottom: 59px;
+  }
+  
   @media screen and (max-width: @screen-sm) {
+    padding-top: 25px;
     padding-bottom: 40px;
+  }
+  
+  &__comment {
+    margin-top: 55px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-top: 29px;
+    }
   }
   
   &__gallery {
@@ -23,6 +37,10 @@
   
     @media screen and (max-width: @screen-sm) {
       width: 50%;
+      
+      &:nth-child(n+9) {
+        display: none;
+      }
     }
   }
   
@@ -60,9 +78,14 @@
   
   &__button {
     width: 220px;
-    margin: 50px auto 0;
+    margin: 48px auto 0;
+  
+    @media screen and (max-width: @screen-md) {
+      margin: 60px auto 0;
+    }
   
     @media screen and (max-width: @screen-sm) {
+      width: 174px;
       margin: 40px auto 0;
     }
   }
