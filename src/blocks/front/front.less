@@ -9,6 +9,10 @@
   position: relative;
   text-align: center;
   
+  @media screen and (max-width: @screen-sm) {
+    flex-direction: column;
+  }
+  
   &__header {
     opacity: .8;
     color: @color-primary;
@@ -17,5 +21,24 @@
     font-size: 110px;
     font-weight: 700;
     text-transform: uppercase;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 80px;
+      line-height: 70px;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      font-size: 40px;
+      line-height: 36px;
+    }
+  }
+  
+  &__logo {
+    display: none;
+  
+    @media screen and (max-width: @screen-sm) {
+      display: block;
+      margin-bottom: 20px;
+    }
   }
 }

@@ -1,19 +1,44 @@
 .event {
   display: flex;
   
+  @media screen and (max-width: @screen-sm) {
+    flex-flow: row wrap;
+  }
+  
   &__item {
     
     &:nth-child(n+2) {
       margin-left: 80px;
+  
+      @media screen and (max-width: @screen-md) {
+        margin-left: 40px;
+      }
+  
+      @media screen and (max-width: @screen-sm) {
+        margin-left: 105px;
+      }
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      font-size: 18px;
+    
+      &:nth-child(3) {
+        margin-left: 0;
+        margin-top: 40px;
+      }
     }
   }
   
   &__header {
     color: #fff;
-    font-family: @font-main;
+    font-family: @font-main-condensed;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+  
+    @media screen and (max-width: @screen-sm) {
+      font-size: 14px;
+    }
   }
   
   &__content {
@@ -23,10 +48,26 @@
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 5px;
+  
+    @media screen and (max-width: @screen-sm) {
+      font-size: 18px;
+    }
   }
   
   &__button {
     padding: 0 23px;
     align-self: flex-end;
+  
+    @media screen and (max-width: @screen-md) {
+      position: absolute;
+      top: 0;
+      right: 62px;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      position: static;
+      width: 178px;
+      margin: 40px auto 0;
+    }
   }
 }

@@ -7,4 +7,21 @@
   display: flex;
   justify-content: space-between;
   z-index: 2;
+  
+  @media screen and (max-width: @screen-md) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  @media screen and (max-width: @screen-sm) {
+    padding: 12px 15px;
+  
+    &__logo {
+      background: url(../img/logo-small.png) no-repeat;
+      background-size: cover;
+      width: 76px;
+      height: 24px;
+      flex: 0 0 auto;
+    }
+  }
 }

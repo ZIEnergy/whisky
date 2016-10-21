@@ -2,21 +2,44 @@
   background: url(../img/festival-bg.jpg) no-repeat;
   background-size: cover;
   padding: 60px 0 100px;
+    
+  @media screen and (max-width: @screen-md) {
+    
+  }
+  
+  &__wrapper {
+    
+    @media screen and (max-width: @screen-md) {
+      position: relative;
+    }
+  }
   
   &__event {
     margin-top: 100px;
+  
+    @media screen and (max-width: @screen-sm) {
+      margin-top: 40px;
+    }
   }
   
   &__section {
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
+  
+    @media screen and (max-width: @screen-sm) {
+      display: block;
+    }
   }
   
   &__section-column {
   
     &:nth-child(n+2) {
       margin-top: 60px;
+  
+      @media screen and (max-width: @screen-sm) {
+        margin-top: 20px;
+      }
     }
   }
 }

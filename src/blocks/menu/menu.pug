@@ -1,10 +1,12 @@
 mixin menu(additionalClass)
-  ul.menu(class=additionalClass)
-    li.menu__item
-      a.menu__item-link(href="#") Мероприятия
-    li.menu__item
-      a.menu__item-link(href="#") Узнай кто ты
-    li.menu__item
-      a.menu__item-link(href="#") Наша история
-    li.menu__item
-      a.menu__item-link(href="#") Фотоотчёты
+  .menu(class=additionalClass)
+    a.menu__button(href="#")
+    ul.menu__item-list
+      li.menu__item
+        a.menu__item-link(href="#") Мероприятия
+      li.menu__item
+        a.menu__item-link(href="#") Узнай кто ты
+      li.menu__item
+        a.menu__item-link(href="#") Наша история
+      li.menu__item
+        a.menu__item-link(href="#") Фотоотчёты
