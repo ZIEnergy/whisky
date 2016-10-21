@@ -1,4 +1,5 @@
 $('.about__slider').slick({
     arrows: true,
-    dots: true
+    dots: true,
+    vertical: true
 });

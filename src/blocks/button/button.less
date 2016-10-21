@@ -11,6 +11,12 @@
   white-space: nowrap;
   font-family: @font-main;
   font-weight: 400;
+  transition: @transition;
+  
+  &:hover {
+    color: @color-primary;
+    background: @color-secondary;
+  }
   
   @media screen and (max-width: @screen-sm) {
     font-size: 14px;
@@ -21,5 +27,10 @@
   &--blue {
     background: @color-secondary;
     color: @color-primary;
+  
+    &:hover {
+      color: @color-secondary;
+      background-color: #f2e8dc;
+    }
   }
 }

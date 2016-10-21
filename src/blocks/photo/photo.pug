@@ -1,14 +1,15 @@
 mixin photo(additionalClass)
-  .photo(class=additionalClass)
+  .photo#photo(class=additionalClass)
     h2.content-header Фотоотчеты
     +light-comment
     .city.city--blue.photo__city
-      a.button.button--blue.city__button.city__item(href="#") Минск
+      a.city__item.city__item--active(href="#") Минск
       a.city__item(href="#") Брест
       a.city__item(href="#") Гродно
       a.city__item(href="#") Гомель
       a.city__item(href="#") Могилев
       a.city__item(href="#") Витебск
+      a.city__item.city__item--others другие города
     ul.photo__gallery
       li.photo__gallery-item
         a.photo__gallery-item-link(href="#")
