@@ -12,6 +12,8 @@ $(".close").click(function(c){c.preventDefault(),parent.$.fancybox.close()});
 $(window).scroll(function(){$(document).scrollTop()>0?$(".header").addClass("header--fixed"):$(".header").removeClass("header--fixed")});
 
 
+
+
 $(".menu__button").click(function(){});
 $(".fancybox").fancybox({});
 
@@ -21,4 +23,5 @@ $(".fancybox").fancybox({});
 
 
 
-$("a[href*=#]:not(.fancybox)").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")||location.hostname==this.hostname){var t=$(this.hash);if(t=t.length?t:$("[name="+this.hash.slice(1)+"]"),t.length)return $("html,body").animate({scrollTop:t.offset().top},1e3),!1}});})
+
+$("a[href*=#]:not(.fancybox):not(.close)").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")||location.hostname==this.hostname){var t=$(this.hash);if(t=t.length?t:$("[name="+this.hash.slice(1)+"]"),t.length)return $("html,body").animate({scrollTop:t.offset().top},1e3),!1}});})

@@ -1,0 +1,48 @@
+.map {
+  
+  &__close {
+    position: fixed;
+    right: 104px;
+    top: 56px;
+  }
+  
+  &__header {
+    color: @color-primary;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50px;
+    font-family: @font-main-condensed;
+    text-transform: uppercase;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  
+  &__content {
+    margin: 0 auto;
+    width: 869px;
+    height: auto;
+    
+    text {
+      font-family: @font-main;
+      font-weight: 700;
+      transition: @transition;
+    }
+  }
+    
+  &__city {
+    transition: @transition;
+    
+    &:hover {
+      fill: @color-primary;
+      
+      +.map__city-name {
+        fill: @color-secondary!important;
+        
+        +.map__city-dot {
+          fill: @color-secondary!important;
+        }
+      }
+    }
+  }
+  
+}

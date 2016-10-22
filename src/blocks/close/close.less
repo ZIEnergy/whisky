@@ -9,6 +9,13 @@
   text-decoration: none;
   transition: @transition;
   
+  @media screen and (max-width: @screen-sm) {
+    margin-right: 0;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+  
   &:hover {
     color: #fff;
     
@@ -27,6 +34,12 @@
     background-size: 18px 18px;
     transition: @transition;
     margin-left: 11px;
+  
+    @media screen and (max-width: @screen-sm) {
+      width: 14px;
+      height: 14px;
+      background-size: 14px 14px;
+    }
   }
 }
 
