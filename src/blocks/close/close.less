@@ -1,0 +1,33 @@
+.close {
+  color: @color-primary;
+  font-family: @font-main;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: @transition;
+  
+  &:hover {
+    color: #fff;
+    
+    &:after {
+      background: url(../img/close-white.svg) no-repeat;
+      background-size: 18px 18px;
+    }
+  }
+  
+  &:after {
+    content: '';
+    display: block;
+    background: url(../img/close.svg) no-repeat;
+    width: 18px;
+    height: 19px;
+    background-size: 18px 18px;
+    transition: @transition;
+    margin-left: 11px;
+  }
+}
+
+

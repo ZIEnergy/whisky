@@ -1,7 +1,9 @@
 $(document).ready(function(){$(".about__slider").slick({arrows:!0,dots:!0,vertical:!0});
+$(".age__button--yes").click(function(){$(".age").fadeOut("fast")});
 $(".article__header").click(function(e){e.preventDefault(),$(this).addClass("article__header--active"),$(this).parents(".article").find(".article__content").fadeIn("fast")});
 
 
+$(".close").click(function(c){c.preventDefault(),parent.$.fancybox.close()});
 
 
 
@@ -11,6 +13,9 @@ $(window).scroll(function(){$(document).scrollTop()>0?$(".header").addClass("hea
 
 
 $(".menu__button").click(function(){});
+$(".fancybox").fancybox({});
+
+
 
 
 
