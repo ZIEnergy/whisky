@@ -3,6 +3,7 @@ $(".age__button--yes").click(function(){$(".age").fadeOut("fast")});
 $(".article__header").click(function(e){e.preventDefault(),$(this).addClass("article__header--active"),$(this).parents(".article").find(".article__content").fadeIn("fast")});
 
 
+
 $(".close").click(function(c){c.preventDefault(),parent.$.fancybox.close()});
 
 
@@ -21,6 +22,7 @@ $(".fancybox").fancybox({});
 
 
 
+$(".test__button").click(function(t){t.preventDefault(),$(this).parents(".test__item").hide(),$(".test__item--result").fadeIn("fast").css("display","flex")});
 
 
 
