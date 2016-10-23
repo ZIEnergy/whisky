@@ -1,6 +1,7 @@
 .prize-form {
   max-width: 800px;
   margin: 0 auto;
+  height: 100%;
   
   @media screen and (max-width: @screen-md) {
     max-width: none;
@@ -8,7 +9,15 @@
   }
   
   @media screen and (max-width: @screen-sm) {
-    padding: 60px 5px 0;
+    padding: 74px 30px 30px;
+    height: auto;
+  }
+  
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   &__close {
@@ -24,8 +33,6 @@
     @media screen and (max-width: @screen-sm) {
       right: 30px;
       top: 30px;
-      top: 0;
-      right: 0;
       position: absolute;
       font-size: 14px;
     }
@@ -58,6 +65,7 @@
     line-height: 24px;
     margin: 39px 0 60px;
     text-align: center;
+    flex: 0 0 auto;
   
     @media screen and (max-width: @screen-sm) {
       margin: 30px 0;
@@ -80,6 +88,7 @@
   &__button {
     width: 150px;
     margin-top: 40px;
+    flex: 0 0 auto;
     
     &:hover {
       background-color: #f2e8dc;

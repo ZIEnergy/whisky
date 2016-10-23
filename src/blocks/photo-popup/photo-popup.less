@@ -1,4 +1,5 @@
 .photo-popup {
+  height: 100%;
   
   &__wrapper {
     display: flex;
@@ -6,13 +7,17 @@
     padding: 0 32px;
   
     @media screen and (max-width: @screen-sm) {
-      padding: 0;
+      padding: 0 25px;
+      height: 100%;
+      justify-content: center;
     }
   }
   
   &__picture {
     margin-bottom: 35px;
     width: 100%;
+    max-width: 990px;
+    margin: 0 auto 35px;
     height: auto;
   
     @media screen and (max-width: @screen-sm) {
@@ -23,7 +28,17 @@
   &__close {
     display: flex;
     align-self: flex-end;
-    margin-bottom: 80px;
-    margin-right: -32px;
+    margin: 56px 110px 80px 0;
+  
+    @media screen and (max-width: @screen-md) {
+      margin: 56px 24px 70px 0;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      margin: 0;
+    }
   }
 }
