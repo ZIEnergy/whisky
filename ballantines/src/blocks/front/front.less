@@ -1,0 +1,53 @@
+.front {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/front-bg.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  
+  @media screen and (max-width: @screen-md) {
+    background-position: center;
+  }
+  
+  @media screen and (max-width: @screen-sm) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  &__header {
+    opacity: .8;
+    color: @color-primary;
+    opacity: .8;
+    font-family: @font-main-condensed;
+    font-size: 110px;
+    line-height: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+  
+    @media screen and (max-width: @screen-md) {
+      font-size: 80px;
+      line-height: 70px;
+    }
+  
+    @media screen and (max-width: @screen-sm) {
+      font-size: 40px;
+      line-height: 36px;
+    }
+  }
+  
+  &__logo {
+    display: none;
+  
+    @media screen and (max-width: @screen-sm) {
+      display: block;
+      margin-bottom: 23px;
+      width: 100px;
+      height: 91px;
+      margin-top: 113px;
+    }
+  }
+}

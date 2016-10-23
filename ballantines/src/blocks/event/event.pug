@@ -1,0 +1,13 @@
+mixin event(additionalClass)
+  .event(class=additionalClass)
+    .event__item
+      .event__header Дата
+      .event__content 28.10.2010
+    .event__item
+      .event__header ВРЕМЯ
+      .event__content 20:00
+    .event__item
+      .event__header МЕСТО
+      .event__content клуб republic <br>ул. кальварийская 10
+    a.button.button--light.event__button.fancybox(href="#prize") Получить сувенир
+    +prize-form

@@ -1,0 +1,10 @@
+mixin prize-form(additionalClass)
+  .prize-form.popup#prize(class=additionalClass)
+    .prize-form__wrapper
+      a.close.prize-form__close(href="#") закрыть
+      .prize-form__header получи уникальный сувенир!
+      .prize-form__comment Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      form.prize-form__content(action="#" method="get")
+        input.input.prize-form__input(type="text" placeholder="Ваше имя" name="name")
+        input.input.prize-form__input(type="text" placeholder="Ваш email" name="name")
+        button.button.prize-form__button Получить
