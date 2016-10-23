@@ -31,8 +31,9 @@
     
   &__city {
     transition: @transition;
+    cursor: pointer;
     
-    &:hover {
+    &:hover, &--active {
       fill: @color-primary;
       
       +.map__city-name {
