@@ -1,4 +1,4 @@
 mixin article(header, content, additionalClass)
   .article(class=additionalClass)
-    a.article__header(href="#") #{header}
+    a.article__header.not-anchor(href="#") #{header}
     p.article__content #{content}
